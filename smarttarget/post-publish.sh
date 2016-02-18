@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# copy config to backup folder
-cp -r ${PUBLISHED_CONFIG_DIR} ${EXTERNAL_BACKUP_DIR}/`date +%s`
-
 # execute promotion replication script
 ./replicate-smarttarget-promotions.sh --target=sdlfh-live-2.hyper-v.local --httpport=8180 --username=root --basepath=/fredhopper --catalog=smarttarget
 
