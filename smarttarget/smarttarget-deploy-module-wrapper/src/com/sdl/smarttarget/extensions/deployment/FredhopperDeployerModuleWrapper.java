@@ -17,9 +17,9 @@ import com.tridion.deployer.Processor;
 import com.tridion.smarttarget.Logger;
 import com.tridion.transport.transportpackage.TransportPackage;
 
-public class FredhopperDeployModuleWrapper extends com.tridion.smarttarget.deployer.FredhopperDeployerModule {
+public class FredhopperDeployerModuleWrapper extends com.tridion.smarttarget.deployer.FredhopperDeployerModule {
 
-    public FredhopperDeployModuleWrapper(Configuration config, Processor processor) throws ConfigurationException {
+    public FredhopperDeployerModuleWrapper(Configuration config, Processor processor) throws ConfigurationException {
         super(config, processor);
     }
 
@@ -31,7 +31,7 @@ public class FredhopperDeployModuleWrapper extends com.tridion.smarttarget.deplo
 
         } catch(ProcessingException e) {
 
-            Logger.warn("FredhopperDeployModuleWrapper", e.getMessage());
+            Logger.warn("FredhopperDeployerModuleWrapper", e.getMessage());
 
             // handle exception
             // rethrow if anything other than Fredhopper Indexer unreachable
