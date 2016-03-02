@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # execute promotion replication script
-./replicate-smarttarget-promotions.sh --target=sdlfh-live-2.hyper-v.local --httpport=8180 --username=root --basepath=/fredhopper --catalog=smarttarget
+/fredhopper/catalog01/bin/replicate-smarttarget-promotions.sh --target=sdlfh-live-2.hyper-v.local --httpport=8180 --username=root --basepath=/fredhopper --catalog=smarttarget
 
 # remove lock file
 if [ -f "/fredhopper/tmp/publish.lck" ]; then
